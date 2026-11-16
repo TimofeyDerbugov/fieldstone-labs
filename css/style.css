@@ -594,9 +594,9 @@ textarea {
     margin-top: 28px;
 }
 
-/* ---------- Ещё проекты ---------- */
+/* ---------- Ещё работы: места под новые сайты ---------- */
 
-.more__title {
+.next__title {
     margin-top: 48px;
     padding-top: 32px;
     border-top: 2px solid var(--ink);
@@ -605,28 +605,28 @@ textarea {
     text-transform: uppercase;
 }
 
-.more {
+.next {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 28px;
     margin-top: 32px;
 }
 
-.more__tag {
+.next__tag {
     margin-top: 18px;
     font-family: var(--font-mono);
     font-size: 12px;
     color: var(--muted);
 }
 
-.more__name {
+.next__name {
     margin-top: 6px;
     font-weight: 800;
     font-size: 22px;
     text-transform: uppercase;
 }
 
-.more__text {
+.next__text {
     margin: 8px 0 14px;
     font-size: 15px;
     color: var(--muted);
@@ -757,6 +757,64 @@ textarea {
     font-weight: 600;
 }
 
+/* Дополнительные услуги, домен и хостинг */
+.extras {
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr;
+    gap: 40px;
+    margin-top: 72px;
+}
+
+.extras__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.extras__note {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+.extras__table {
+    border-top: 2px solid var(--ink);
+}
+
+.extra-row {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    gap: 24px;
+    align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.extra-row__name {
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.extra-row__price {
+    color: var(--ink);
+    font-weight: 600;
+    text-align: right;
+}
+
+.extra-row--total {
+    border-bottom: 2px solid var(--ink);
+}
+
+.extra-row--total .extra-row__name,
+.extra-row--total .extra-row__price {
+    color: var(--accent);
+    font-weight: 800;
+}
+
 /* ---------- Процесс: шаги по порядку ---------- */
 
 .steps {
@@ -822,6 +880,15 @@ textarea {
     font-size: 17px;
 }
 
+.need__list strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.need + .need {
+    margin-top: 56px;
+}
+
 /* ---------- Инструменты ---------- */
 
 .stack {
@@ -874,7 +941,7 @@ textarea {
 
 .about__facts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-top: 40px;
     padding-top: 24px;
@@ -892,37 +959,6 @@ textarea {
     color: var(--ink);
     font-weight: 800;
     font-size: 26px;
-}
-
-/* ---------- Отзывы ---------- */
-
-.reviews__note {
-    margin-top: 20px;
-}
-
-.reviews {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 48px;
-}
-
-.review {
-    padding: 32px;
-    border: 1px dashed var(--line-strong);
-    border-radius: var(--radius);
-}
-
-.review__text {
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.review__who {
-    margin-top: 20px;
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--muted);
 }
 
 /* ---------- Вопросы ---------- */
@@ -1134,6 +1170,34 @@ select.form__input {
     color: var(--muted);
 }
 
+.brief__done[data-done="manual"] {
+    border-top-color: var(--accent);
+}
+
+.brief__text {
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.brief__done-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+}
+
+/* Поле-ловушка для спам-ботов: убрано с экрана, но есть в форме */
+.form__trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* ---------- Контакты ---------- */
 
 .contacts__title {
@@ -1147,7 +1211,8 @@ select.form__input {
 
 .contacts__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
     margin-top: 64px;
     border-top: 2px solid var(--ink);
 }
@@ -1203,7 +1268,7 @@ select.form__input {
 /* ---------- Адаптив ---------- */
 
 @media (max-width: 1100px) {
-    .more {
+    .next {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1225,6 +1290,7 @@ select.form__input {
     .case,
     .section__head,
     .included,
+    .extras,
     .need,
     .stack,
     .about,
@@ -1297,10 +1363,9 @@ select.form__input {
         padding: 80px 0;
     }
 
-    .more,
+    .next,
     .steps,
     .included__list,
-    .reviews,
     .form__row,
     .about__facts,
     .contacts__list {
@@ -1327,6 +1392,15 @@ select.form__input {
 
     .price-row__price {
         font-size: 16px;
+    }
+
+    .extra-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .extra-row__price {
+        text-align: left;
     }
 }
 
