@@ -643,14 +643,6 @@ textarea {
     border-radius: var(--radius);
 }
 
-.next__links {
-    display: flex;
-    gap: 20px;
-}
-
-.link--muted {
-    color: var(--muted);
-}
 
 /* Место под картинку: описание того, что должно быть на фото */
 .ph {
@@ -946,6 +938,11 @@ textarea {
     grid-template-columns: 0.8fr 1.2fr;
     gap: 72px;
     align-items: start;
+}
+
+/* Пока без фото: текст в одну колонку */
+.about--no-photo {
+    grid-template-columns: minmax(0, 860px);
 }
 
 .about__lead {
