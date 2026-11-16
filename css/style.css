@@ -632,6 +632,26 @@ textarea {
     color: var(--muted);
 }
 
+.next__shot {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+}
+
+.next__links {
+    display: flex;
+    gap: 20px;
+}
+
+.link--muted {
+    color: var(--muted);
+}
+
 /* Место под картинку: описание того, что должно быть на фото */
 .ph {
     position: relative;
@@ -1238,6 +1258,20 @@ select.form__input {
     color: var(--ink);
     text-decoration-color: var(--accent);
     text-underline-offset: 5px;
+}
+
+/* Плашка-пометка рядом с контактом */
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--accent);
 }
 
 /* ---------- Подвал ---------- */
