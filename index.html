@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fieldstone Labs — сайты, телеграм-боты и ИИ-помощники для бизнеса</title>
+    <meta name="description" content="Fieldstone Labs: разработка сайтов, телеграм-ботов и ИИ-помощников для бизнеса. Портфолио, услуги, цены и бриф на проект.">
+
+    <link rel="canonical" href="https://timofeyderbugov.github.io/fieldstone-labs/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:title" content="Fieldstone Labs — сайты, боты и ИИ-помощники для бизнеса">
+    <meta property="og:description" content="Портфолио, услуги и бриф на проект.">
+    <meta property="og:url" content="https://timofeyderbugov.github.io/fieldstone-labs/">
+    <meta property="og:image" content="https://timofeyderbugov.github.io/fieldstone-labs/img/cases/am-home-d.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="wrap header__inner">
+            <a class="logo" href="#top">Fieldstone<span>Labs</span></a>
+
+            <nav class="nav" aria-label="Разделы сайта">
+                <a href="#work">Работы</a>
+                <a href="#services">Услуги и цены</a>
+                <a href="#process">Как работаю</a>
+                <a href="#about">Обо мне</a>
+                <a href="#faq">Вопросы</a>
+            </nav>
+
+            <a class="btn btn--small" href="#brief">Обсудить проект</a>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- Первый экран: заголовок и терминал -->
+        <section class="hero">
+            <div class="wrap hero__inner">
+                <div class="hero__text">
+                    <p class="hero__status">
+                        <span class="hero__dot" aria-hidden="true"></span>
+                        Беру новые проекты с <span class="fill">[месяц]</span>
+                    </p>
+
+                    <h1 class="hero__title">Сайты, телеграм-боты и&nbsp;ИИ-помощники для&nbsp;бизнеса</h1>
+
+                    <p class="hero__lead">
+                        Я <span class="fill">[Имя Фамилия]</span>, делаю сайты под ключ: от дизайна
+                        и вёрстки до форм, юридических страниц и запуска на хостинге.
+                        Работаю с бизнесом в России и за рубежом.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn" href="#brief">Заполнить бриф</a>
+                        <a class="btn btn--line" href="#work">Смотреть работы</a>
+                    </div>
+                </div>
+
+                <!-- Окно терминала: команды печатаются по очереди (js/main.js) -->
+                <div class="term" aria-label="Список проектов в виде терминала">
+                    <div class="term__bar">
+                        <span></span><span></span><span></span>
+                        <p class="term__title">~/fieldstone-labs</p>
+                    </div>
+                    <pre class="term__body" data-term><span class="term__muted">$</span> ls projects/
+apple-mind/     brooklyn/     movsisyan/
+infoball/       snowdesk/     timelens/
+
+<span class="term__muted">$</span> fieldstone new --site "ваш бизнес"
+<span class="term__ok">✓</span> дизайн  <span class="term__ok">✓</span> вёрстка  <span class="term__ok">✓</span> формы
+<span class="term__ok">✓</span> 152-ФЗ  <span class="term__ok">✓</span> хостинг  <span class="term__ok">✓</span> запуск</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Работы -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <div class="section__head">
+                    <h2 class="section__title">Работы</h2>
+                    <p class="section__lead">
+                        Концепты сайтов для реальных местных бизнесов: данные, фото и цены взяты
+                        из открытых источников. Все сайты живые — их можно открыть и потрогать.
+                    </p>
+                </div>
+
+                <!-- Кейс 1 -->
+                <article class="case">
+                    <div class="case__media">
+                        <img class="case__desktop" src="img/cases/am-home-d.jpg" width="1440" height="900" loading="lazy"
+                             alt="Главная страница сайта Apple Mind: тёмный фон, крупный заголовок и фото камеры iPhone">
+                        <img class="case__phone" src="img/cases/am-catalog-m.jpg" width="780" height="1688" loading="lazy"
+                             alt="Каталог Apple Mind на телефоне">
+                    </div>
+
+                    <div class="case__info">
+                        <p class="case__tag">Концепт · магазин техники и сервис, Обнинск</p>
+                        <h3 class="case__title">Apple Mind</h3>
+                        <p class="case__text">
+                            Сайт магазина техники Apple и ремонта телефонов. Главная с заявкой «Купить / Починить»
+                            и каталог на 38 моделей с ориентировочными ценами по рынку, поиском и заказом.
+                        </p>
+                        <ul class="case__list">
+                            <li>Каталог: разделы, поиск, сортировка, окно заказа</li>
+                            <li>Цены собраны по рынку РФ, лежат в одном файле</li>
+                            <li>Фото устройств со свободной лицензией и авторами</li>
+                            <li>Cookie, политика, согласие на обработку данных</li>
+                        </ul>
+                        <ul class="chips">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li>
+                        </ul>
+                        <div class="case__links">
+                            <a class="btn btn--small" href="https://timofeyderbugov.github.io/apple-mind-obninsk/" target="_blank" rel="noopener">Открыть сайт</a>
+                            <a class="link" href="https://github.com/TimofeyDerbugov/apple-mind-obninsk" target="_blank" rel="noopener">Код на GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Кейс 2 -->
+                <article class="case case--flip">
+                    <div class="case__media">
+                        <img class="case__desktop" src="img/cases/br-home-d.jpg" width="1440" height="900" loading="lazy"
+                             alt="Главная страница автомойки Бруклин: фото бокса с шестигранными лампами и узкий тяжёлый заголовок">
+                        <img class="case__phone" src="img/cases/br-home-m.jpg" width="780" height="1688" loading="lazy"
+                             alt="Сайт автомойки Бруклин на телефоне">
+                    </div>
+
+                    <div class="case__info">
+                        <p class="case__tag">Концепт · автомойка и детейлинг 24/7, Обнинск</p>
+                        <h3 class="case__title">Бруклин</h3>
+                        <p class="case__text">
+                            Премиальный тёмный сайт круглосуточной мойки: живые часы «сейчас открыто»,
+                            прайс как в хорошем меню, онлайн-запись и подарочные сертификаты.
+                        </p>
+                        <ul class="case__list">
+                            <li>Запись: услуга, тип машины, день и время, способ связи</li>
+                            <li>Мотив шестигранных ламп из моечных боксов</li>
+                            <li>Фото скачиваются автоматически через GitHub Actions</li>
+                            <li>Карта Яндекса только после согласия на cookie</li>
+                        </ul>
+                        <ul class="chips">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Actions</li>
+                        </ul>
+                        <div class="case__links">
+                            <a class="btn btn--small" href="https://timofeyderbugov.github.io/brooklyn-carwash-obninsk/" target="_blank" rel="noopener">Открыть сайт</a>
+                            <a class="link" href="https://github.com/TimofeyDerbugov/brooklyn-carwash-obninsk" target="_blank" rel="noopener">Код на GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Кейс 3 -->
+                <article class="case">
+                    <div class="case__media">
+                        <img class="case__desktop" src="img/cases/mv-home-d.jpg" width="1440" height="900" loading="lazy"
+                             alt="Главная страница Movsisyan Beauty Studio: светлый фон и заголовок с засечками">
+                        <img class="case__phone" src="img/cases/mv-home-m.jpg" width="780" height="1688" loading="lazy"
+                             alt="Сайт Movsisyan Beauty Studio на телефоне">
+                    </div>
+
+                    <div class="case__info">
+                        <p class="case__tag">Концепт · студия волос, Обнинск</p>
+                        <h3 class="case__title">Movsisyan Beauty Studio</h3>
+                        <p class="case__text">
+                            Светлый одностраничный сайт студии волос: услуги и цены, работы и мастера,
+                            отзывы и онлайн-запись в четыре шага.
+                        </p>
+                        <ul class="case__list">
+                            <li>Запись: услуга → мастер → дата и время → контакты</li>
+                            <li>Правила записи, политика и согласие по 152-ФЗ</li>
+                            <li>Локальные шрифты, карта загружается по клику</li>
+                        </ul>
+                        <ul class="chips">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                        </ul>
+                        <div class="case__links">
+                            <a class="btn btn--small" href="https://timofeyderbugov.github.io/movsisyan-beauty-studio/" target="_blank" rel="noopener">Открыть сайт</a>
+                            <a class="link" href="https://github.com/TimofeyDerbugov/movsisyan-beauty-studio" target="_blank" rel="noopener">Код на GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Другие проекты -->
+                <h3 class="more__title">Ещё проекты</h3>
+                <ul class="more">
+                    <li class="more__item">
+                        <figure class="ph">
+                            <p class="ph__tag">Скриншот</p>
+                            <p class="ph__text">Главная «Инфобалла» в стиле окна терминала: блоки ОГЭ и ЕГЭ. Горизонтальный кадр 16:10.</p>
+                        </figure>
+                        <p class="more__tag">Своя платформа · образование</p>
+                        <h4 class="more__name">Инфобалл</h4>
+                        <p class="more__text">Сайт подготовки к ОГЭ и ЕГЭ по информатике: разборы всех номеров, тренажёр, задачи с проверкой ответа и маскот Курсор.</p>
+                        <a class="link" href="#" data-placeholder>Открыть <span class="fill">[ссылка]</span></a>
+                    </li>
+                    <li class="more__item">
+                        <figure class="ph">
+                            <p class="ph__tag">Скриншот</p>
+                            <p class="ph__text">Рабочий стол macOS: снег лежит на окнах и Dock, рядом снеговик. Горизонтальный кадр 16:10.</p>
+                        </figure>
+                        <p class="more__tag">Своё приложение · macOS</p>
+                        <h4 class="more__name">SnowDesk</h4>
+                        <p class="more__text">Нативное приложение: снег на рабочем столе оседает на окнах и Dock, снеговика можно слепить мышкой, Санта приносит ёлку.</p>
+                        <a class="link" href="#" data-placeholder>Подробнее <span class="fill">[ссылка]</span></a>
+                    </li>
+                    <li class="more__item">
+                        <figure class="ph">
+                            <p class="ph__tag">Скриншот</p>
+                            <p class="ph__text">Окно TimeLens: графики времени по приложениям и сайтам за день. Горизонтальный кадр 16:10.</p>
+                        </figure>
+                        <p class="more__tag">Своё приложение · macOS</p>
+                        <h4 class="more__name">TimeLens</h4>
+                        <p class="more__text">Учёт времени за компьютером: таймеры, проекты, лимиты и фокус-режим, цели и серии, аналитика и экспорт.</p>
+                        <a class="link" href="#" data-placeholder>Подробнее <span class="fill">[ссылка]</span></a>
+                    </li>
+                    <li class="more__item more__item--empty">
+                        <figure class="ph">
+                            <p class="ph__tag">Скриншот</p>
+                            <p class="ph__text">Переписка с телеграм-ботом: меню, запись или заказ. Вертикальный кадр с телефона.</p>
+                        </figure>
+                        <p class="more__tag"><span class="fill">[Тип проекта]</span></p>
+                        <h4 class="more__name"><span class="fill">[Телеграм-бот или ИИ-помощник]</span></h4>
+                        <p class="more__text"><span class="fill">[Что умеет, для кого сделан, какой результат]</span></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Услуги и цены -->
+        <section class="section section--alt" id="services">
+            <div class="wrap">
+                <div class="section__head">
+                    <h2 class="section__title">Услуги и цены</h2>
+                    <p class="section__lead">
+                        Цены — стартовые. Точную сумму и срок назову после брифа и короткого созвона,
+                        до начала работ, и закреплю в договоре.
+                    </p>
+                </div>
+
+                <div class="price-table" role="table" aria-label="Услуги, сроки и цены">
+                    <div class="price-row price-row--head" role="row">
+                        <span role="columnheader">Услуга</span>
+                        <span role="columnheader">Что внутри</span>
+                        <span role="columnheader">Срок</span>
+                        <span role="columnheader">Цена</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Лендинг</span>
+                        <span role="cell">Одна страница под услугу или акцию, форма заявки</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Сайт-визитка</span>
+                        <span role="cell">Главная, услуги, цены, отзывы, контакты с картой, запись</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Сайт с каталогом</span>
+                        <span role="cell">Каталог с фильтрами, поиском и заказом, данные легко менять</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Телеграм-бот</span>
+                        <span role="cell">Запись, заказы, ответы на частые вопросы, уведомления владельцу</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">ИИ-помощник</span>
+                        <span role="cell">Отвечает клиентам на сайте или в Telegram по вашим материалам</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Редизайн</span>
+                        <span role="cell">Новый вид старого сайта, перенос контента, правовые страницы</span>
+                        <span role="cell">от <span class="fill">[__]</span> дней</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽</span>
+                    </div>
+                    <div class="price-row" role="row">
+                        <span role="cell" class="price-row__name">Поддержка</span>
+                        <span role="cell">Правки текстов и цен, мелкие доработки, контроль работы сайта</span>
+                        <span role="cell">каждый месяц</span>
+                        <span role="cell" class="price-row__price">от <span class="fill">[____]</span> ₽/мес</span>
+                    </div>
+                </div>
+
+                <!-- Что входит в каждый сайт -->
+                <div class="included">
+                    <h3 class="included__title">В каждый сайт уже входит</h3>
+                    <ul class="included__list">
+                        <li><strong>Адаптивная вёрстка</strong> — проверяю на компьютере и телефоне</li>
+                        <li><strong>Формы заявок</strong> с маской телефона и проверкой полей</li>
+                        <li><strong>Юридические страницы</strong>: политика, согласие на обработку данных по 152-ФЗ, cookie, соглашение</li>
+                        <li><strong>Баннер cookie</strong>, сторонние сервисы — только после согласия</li>
+                        <li><strong>Базовое SEO</strong>: заголовки, описания, превью для соцсетей, понятные адреса</li>
+                        <li><strong>Скорость</strong>: сжатые фото, без лишних библиотек</li>
+                        <li><strong>Запуск</strong> на хостинге и подключение домена</li>
+                        <li><strong>Исходный код</strong> остаётся у вас, с инструкцией, как менять тексты и цены</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс -->
+        <section class="section" id="process">
+            <div class="wrap">
+                <h2 class="section__title">Как работаю</h2>
+
+                <ol class="steps">
+                    <li class="step">
+                        <h3 class="step__name">Бриф</h3>
+                        <p>Вы заполняете короткую анкету внизу страницы: что за бизнес, какой нужен сайт, есть ли примеры.</p>
+                        <p class="step__time"><span class="fill">[1 день]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Созвон и смета</h3>
+                        <p>Обсуждаем задачу за 20–30 минут. Присылаю план страниц, срок и точную цену.</p>
+                        <p class="step__time"><span class="fill">[1–2 дня]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Договор и предоплата</h3>
+                        <p>Фиксируем объём, сроки и число правок. Предоплата <span class="fill">[__]</span>%.</p>
+                        <p class="step__time"><span class="fill">[1 день]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Дизайн</h3>
+                        <p>Показываю 2–3 варианта первого экрана, выбираем стиль и дорабатываем остальные блоки.</p>
+                        <p class="step__time"><span class="fill">[2–5 дней]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Разработка</h3>
+                        <p>Верстаю, подключаю формы, каталог или бота, пишу юридические страницы.</p>
+                        <p class="step__time"><span class="fill">[3–10 дней]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Проверка и правки</h3>
+                        <p>Даю ссылку на рабочую версию. Вы смотрите с телефона и компьютера, я вношу правки.</p>
+                        <p class="step__time"><span class="fill">[1–3 дня]</span></p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__name">Запуск и поддержка</h3>
+                        <p>Подключаю домен и хостинг, передаю доступы и код. Дальше — поддержка по желанию.</p>
+                        <p class="step__time"><span class="fill">[1 день]</span></p>
+                    </li>
+                </ol>
+
+                <div class="need">
+                    <h3 class="need__title">Что понадобится от вас</h3>
+                    <ul class="need__list">
+                        <li>Логотип и фирменные цвета, если есть</li>
+                        <li>Тексты об услугах и цены — или помогу их написать</li>
+                        <li>Фото: свои или из карточки на Яндекс Картах</li>
+                        <li>Реквизиты для юридических страниц: ФИО или название, ИНН, ОГРН</li>
+                        <li>Доступ к домену, если он уже куплен</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Стек -->
+        <section class="section section--alt" id="stack">
+            <div class="wrap stack">
+                <h2 class="section__title">Инструменты</h2>
+
+                <dl class="stack__list">
+                    <div>
+                        <dt>Сайты</dt>
+                        <dd>HTML, CSS, JavaScript, адаптивная вёрстка, GitHub Pages <span class="fill">[+ другой хостинг]</span></dd>
+                    </div>
+                    <div>
+                        <dt>Боты</dt>
+                        <dd><span class="fill">[Python, aiogram]</span>, Telegram Bot API</dd>
+                    </div>
+                    <div>
+                        <dt>ИИ</dt>
+                        <dd><span class="fill">[модели и API, с которыми работаете]</span>, ИИ-помощники на ваших материалах</dd>
+                    </div>
+                    <div>
+                        <dt>Приложения</dt>
+                        <dd><span class="fill">[Swift, SwiftUI]</span>, нативные приложения для macOS</dd>
+                    </div>
+                    <div>
+                        <dt>Работа</dt>
+                        <dd>Git и GitHub, GitHub Actions, Figma <span class="fill">[проверить]</span></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section class="section" id="about">
+            <div class="wrap about">
+                <figure class="ph ph--portrait">
+                    <p class="ph__tag">Фото</p>
+                    <p class="ph__text">Ваш портрет: по пояс, за ноутбуком или на нейтральном фоне, естественный свет. Вертикальный кадр 4:5.</p>
+                </figure>
+
+                <div class="about__text">
+                    <h2 class="section__title">Обо мне</h2>
+                    <p class="about__lead">
+                        Меня зовут <span class="fill">[Имя Фамилия]</span>, я основатель Fieldstone Labs.
+                        Учусь <span class="fill">[где и на кого]</span> и делаю сайты, ботов и приложения
+                        <span class="fill">[сколько лет / с какого года]</span>.
+                    </p>
+                    <p>
+                        Параллельно веду свою образовательную платформу «Инфобалл» по информатике
+                        и пишу приложения для macOS — поэтому умею объяснять сложное простыми словами
+                        и довожу проекты до запуска.
+                    </p>
+                    <p><span class="fill">[Пара фраз о себе: почему вам можно доверить проект, чем вы отличаетесь]</span></p>
+
+                    <ul class="about__facts">
+                        <li><strong><span class="fill">[__]</span></strong> сделанных проектов</li>
+                        <li><strong><span class="fill">[город]</span></strong> работаю удалённо</li>
+                        <li><strong><span class="fill">[статус]</span></strong> самозанятый или ИП</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы: заглушки, заменить настоящими -->
+        <section class="section section--alt" id="reviews">
+            <div class="wrap">
+                <h2 class="section__title">Отзывы</h2>
+                <p class="section__lead reviews__note">Сюда — настоящие отзывы клиентов со ссылкой на их бизнес. Пока место пустое.</p>
+
+                <div class="reviews">
+                    <blockquote class="review">
+                        <p class="review__text"><span class="fill">[Текст отзыва клиента — вставьте реальный]</span></p>
+                        <footer class="review__who">
+                            <span class="fill">[Имя клиента]</span>, <span class="fill">[бизнес, город]</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="review">
+                        <p class="review__text"><span class="fill">[Текст отзыва клиента — вставьте реальный]</span></p>
+                        <footer class="review__who">
+                            <span class="fill">[Имя клиента]</span>, <span class="fill">[бизнес, город]</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вопросы -->
+        <section class="section" id="faq">
+            <div class="wrap faq">
+                <h2 class="section__title">Вопросы</h2>
+
+                <div class="faq__list">
+                    <details class="faq__item">
+                        <summary>Сколько стоит сайт?</summary>
+                        <p>Зависит от объёма: лендинг дешевле сайта с каталогом. Стартовые цены — в таблице выше, точную сумму назову после брифа, до начала работ.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Как проходит оплата?</summary>
+                        <p>Предоплата <span class="fill">[__]</span>% после договора, остальное — после запуска. Работаю как <span class="fill">[самозанятый / ИП]</span>, выдаю чек.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Сколько правок входит?</summary>
+                        <p><span class="fill">[__]</span> круга правок на дизайне и <span class="fill">[__]</span> после сборки входят в цену. Новые блоки и страницы — отдельно, по согласованию.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Что, если у меня нет текстов и фото?</summary>
+                        <p>Помогу: напишу тексты по короткому интервью, фото можно взять из вашей карточки на Яндекс Картах или подобрать с открытой лицензией.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Где будет жить сайт?</summary>
+                        <p>На хостинге, который подходит под задачу: для простых сайтов — бесплатный GitHub Pages, для сайтов с базой данных — платный хостинг <span class="fill">[какой]</span>. Домен оформляем на вас.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Сайт будет соответствовать 152-ФЗ?</summary>
+                        <p>Добавляю политику обработки данных, отдельное согласие с галочкой в формах, баннер cookie и пользовательское соглашение. Реквизиты подставляем ваши. Финальные тексты стоит показать юристу.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Работаете с зарубежными клиентами?</summary>
+                        <p>Да. Делаю сайты на русском и английском, оплату обсуждаем отдельно <span class="fill">[способы оплаты]</span>.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Что после запуска?</summary>
+                        <p>Передаю код и доступы. Если нужно, беру сайт на поддержку: правлю тексты и цены, слежу, чтобы всё работало.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Бриф -->
+        <section class="section section--alt" id="brief">
+            <div class="wrap brief">
+                <div class="brief__side">
+                    <h2 class="section__title">Бриф на проект</h2>
+                    <p class="section__lead">
+                        Ответьте на несколько вопросов — так я сразу пойму задачу и назову
+                        ориентир по цене и сроку. Займёт 3–5 минут.
+                    </p>
+                    <p class="brief__alt">
+                        Удобнее голосом или текстом? Напишите в Telegram:
+                        <a class="link" href="#" data-placeholder><span class="fill">[@username]</span></a>
+                    </p>
+                </div>
+
+                <form class="form" id="brief-form" novalidate>
+                    <fieldset class="form__group">
+                        <legend class="form__label">Что нужно</legend>
+                        <div class="pills">
+                            <label class="pill"><input type="radio" name="type" value="Лендинг" checked><span>Лендинг</span></label>
+                            <label class="pill"><input type="radio" name="type" value="Сайт-визитка"><span>Сайт-визитка</span></label>
+                            <label class="pill"><input type="radio" name="type" value="Сайт с каталогом"><span>Сайт с каталогом</span></label>
+                            <label class="pill"><input type="radio" name="type" value="Телеграм-бот"><span>Телеграм-бот</span></label>
+                            <label class="pill"><input type="radio" name="type" value="ИИ-помощник"><span>ИИ-помощник</span></label>
+                            <label class="pill"><input type="radio" name="type" value="Редизайн"><span>Редизайн</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="business">Ваш бизнес</label>
+                            <input class="form__input" id="business" name="business" type="text" placeholder="Например, автомойка в Обнинске">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="current">Сайт или карточка сейчас <span class="form__hint">если есть</span></label>
+                            <input class="form__input" id="current" name="current" type="url" placeholder="https://">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="goal">Что должен делать сайт</label>
+                        <textarea class="form__input form__textarea" id="goal" name="goal" rows="3" placeholder="Например, приводить записи на мойку и показывать цены"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="refs">Сайты, которые нравятся <span class="form__hint">ссылки, необязательно</span></label>
+                        <input class="form__input" id="refs" name="refs" type="text" placeholder="Ссылки через запятую">
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="budget">Бюджет</label>
+                            <select class="form__input" id="budget" name="budget">
+                                <!-- Вписать свои диапазоны вместо [сумма] -->
+                                <option>Пока не знаю</option>
+                                <option>до [сумма] ₽</option>
+                                <option>[сумма] – [сумма] ₽</option>
+                                <option>от [сумма] ₽</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="deadline">Когда нужен сайт</label>
+                            <select class="form__input" id="deadline" name="deadline">
+                                <option>Не горит</option>
+                                <option>В течение месяца</option>
+                                <option>За 1–2 недели</option>
+                                <option>Срочно</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input" id="name" name="name" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="contact">Telegram, телефон или почта</label>
+                            <input class="form__input" id="contact" name="contact" type="text" required placeholder="@username, +7… или почта">
+                        </div>
+                    </div>
+
+                    <label class="consent">
+                        <input type="checkbox" name="consent" value="yes">
+                        <span>Соглашаюсь на <a href="consent.html" target="_blank">обработку персональных данных</a></span>
+                    </label>
+
+                    <p class="form__error" role="alert" hidden></p>
+
+                    <button class="btn btn--full" type="submit">Отправить бриф</button>
+
+                    <p class="form__note">
+                        Отвечу в течение <span class="fill">[срок]</span>. Как я обращаюсь с данными —
+                        в <a href="privacy.html" target="_blank">политике конфиденциальности</a>.
+                    </p>
+                </form>
+
+                <div class="brief__done" hidden>
+                    <p class="brief__done-title">Бриф у меня</p>
+                    <p>Изучу задачу и напишу вам <span data-contact></span>.</p>
+                    <button class="link" type="button" data-reset>Заполнить ещё один</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="section" id="contacts">
+            <div class="wrap contacts">
+                <h2 class="contacts__title">Давайте сделаем ваш сайт</h2>
+
+                <dl class="contacts__list">
+                    <div>
+                        <dt>Telegram</dt>
+                        <dd><a href="#" data-placeholder><span class="fill">[@username]</span></a></dd>
+                    </div>
+                    <div>
+                        <dt>Почта</dt>
+                        <dd><a href="#" data-placeholder><span class="fill">[email]</span></a></dd>
+                    </div>
+                    <div>
+                        <dt>Телефон</dt>
+                        <dd><span class="fill">[+7 ___ ___-__-__]</span></dd>
+                    </div>
+                    <div>
+                        <dt>GitHub</dt>
+                        <dd><a href="https://github.com/TimofeyDerbugov" target="_blank" rel="noopener">github.com/TimofeyDerbugov</a></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer__inner">
+            <p class="footer__logo">Fieldstone Labs</p>
+            <p class="footer__small">
+                Концепты в портфолио сделаны по открытым данным и не являются официальными
+                сайтами этих компаний. Названия и товарные знаки принадлежат их владельцам.
+            </p>
+            <nav class="footer__legal" aria-label="Документы">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="consent.html">Согласие на обработку данных</a>
+                <a href="cookies.html">Политика cookie</a>
+                <a href="terms.html">Пользовательское соглашение</a>
+            </nav>
+            <!-- Реквизиты: заменить на настоящие -->
+            <p class="footer__small">
+                <span class="fill">[ФИО]</span>, <span class="fill">[самозанятый / ИП]</span>,
+                ИНН <span class="fill">[000000000000]</span>
+            </p>
+            <p class="footer__small">© <span data-year>2026</span></p>
+        </div>
+    </footer>
+
+    <script src="js/cookies.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
